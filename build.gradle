@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath "net.serenity-bdd:serenity-gradle-plugin:2.4.2"
+        classpath "net.serenity-bdd:serenity-gradle-plugin:2.4.4"
     }
 }
 apply plugin: 'java'
@@ -19,17 +19,12 @@ repositories {
 compileJava.options.encoding = 'UTF-8'
 
 dependencies {
-    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '2.4.2'
-    implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.4.2'
-    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.4.2'
-    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.4.2'
-    implementation group: 'net.serenity-bdd', name: 'serenity-gradle-plugin', version: '2.4.2'
-    implementation group: 'net.serenity-bdd', name: 'serenity-cucumber6', version: '2.4.2'
+    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '2.4.4'
+    implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.4.4'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.4.4'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.4.4'
+    implementation group: 'net.serenity-bdd', name: 'serenity-cucumber6', version: '2.4.4'
     implementation 'org.slf4j:slf4j-api:1.7.30'
     implementation 'org.slf4j:slf4j-simple:1.7.30'
     implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
-    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
-
 }
-
-gradle.startParameter.continueOnFailure = true

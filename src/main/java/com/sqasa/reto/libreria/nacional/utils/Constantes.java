@@ -4,7 +4,7 @@ public class Constantes {
     private Constantes() {
     }
 
-
     public static final String TU_CUENTA = "Tu cuenta";
+    public static final String URL = "https://librerianacional.com/";
     public static final String CEDULA_CIUDADANIA = "CC";
 }

@@ -6,6 +6,8 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Step;
 
+import static com.sqasa.reto.libreria.nacional.utils.Constantes.URL;
+
 public class Abrir implements Task {
     public static Abrir laPagina() {
         return Tasks.instrumented(Abrir.class);
@@ -14,6 +16,6 @@ public class Abrir implements Task {
     @Override
     @Step("{0} Abre la Pagina Web de la Librería Nacional")
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Open.url("https://librerianacional.com/"));
+        actor.attemptsTo(Open.url(URL));
     }
 }

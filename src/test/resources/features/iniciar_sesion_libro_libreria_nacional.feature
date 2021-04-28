@@ -12,5 +12,5 @@ Característica: Casos de pruebas Libreria Nacional
     Cuando ingreso mi usuario y clave
       | usuario                  | clave        |
       | mcwx6369@vlrt7077.tbl.vm | oAegkIIWEQyj |
-    Entonces ingrese a la aplicacion
-    Y Busco Libros sobre el tema "Terror"
+    Entonces Busco Libros sobre el tema "Terror"
+    Y muestro los libros

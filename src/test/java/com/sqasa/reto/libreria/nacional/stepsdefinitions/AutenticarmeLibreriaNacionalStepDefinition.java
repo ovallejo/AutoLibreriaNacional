@@ -30,15 +30,4 @@ public class AutenticarmeLibreriaNacionalStepDefinition {
         theActorInTheSpotlight().attemptsTo(Llenar.formularioInicioSesion(usuarioClienteList.get(0)));
     }
 
-
-    @Entonces("ingrese a la aplicacion")
-    public void ingreseALaAplicacion() {
-        theActorInTheSpotlight().should(seeThat(ElementoPagina.cuenta(), equalTo(Constantes.TU_CUENTA)));
-
-    }
-
-    @Entonces("Busco Libros sobre el tema {string}")
-    public void buscoLibrosSobreElTemaTerror(String tema) {
-        theActorInTheSpotlight().attemptsTo(Buscar.libros(tema));
-    }
 }
